@@ -64,12 +64,12 @@ function App() {
   
   console.log(cards)
 
-  // const resetTurn = () => {
-  //   setChoiceOne(null)
-  //   setChoiceTwo(null)
-  //   setTurns(prevTurns => prevTurns+1)
-  //   setDisabled(false)
-  // }
+  const resetTurn = () => {
+    setChoiceOne(null)
+    setChoiceTwo(null)
+    setTurns(prevTurns => prevTurns+1)
+    setDisabled(false)
+  }
 
   useEffect(() => {
     shuffleCards()
