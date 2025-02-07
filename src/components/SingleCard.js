@@ -3,11 +3,11 @@ import './SingleCard.css'
 
 function SingleCard( {card, handleChoice, flipped, disabled} ) {
 
-    // const handleClick = () => {
-    //     if(!disabled){
-    //         handleChoice(card)
-    //     }
-    // }
+    const handleClick = () => {
+        if(!disabled){
+            handleChoice(card)
+        }
+    }
 
     return (
         <div className='card'>
