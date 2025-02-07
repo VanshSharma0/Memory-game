@@ -36,31 +36,31 @@ function App() {
     choiceOne ? setChoiceTwo(card) : setChoiceOne(card)
   }
 
-  useEffect(() => {
-    if(choiceOne && choiceTwo){
-      setDisabled(true)
+  // useEffect(() => {
+  //   if(choiceOne && choiceTwo){
+  //     setDisabled(true)
       
-      if(choiceOne.src == choiceTwo.src){
+  //     if(choiceOne.src == choiceTwo.src){
         
-        setCards(prevCards => {
-          return prevCards.map(card => {
-            if (card.src === choiceOne.src){
-              return {...card, matched: true}
-            }
-            else{
-              return card
-            }
-          })
-        })
-        resetTurn()
-      }
-      else{
-        setTimeout(() => {
-          resetTurn() 
-        }, 1000);
-      }
-    }
-  }, [choiceOne, choiceTwo])
+  //       setCards(prevCards => {
+  //         return prevCards.map(card => {
+  //           if (card.src === choiceOne.src){
+  //             return {...card, matched: true}
+  //           }
+  //           else{
+  //             return card
+  //           }
+  //         })
+  //       })
+  //       resetTurn()
+  //     }
+  //     else{
+  //       setTimeout(() => {
+  //         resetTurn() 
+  //       }, 1000);
+  //     }
+  //   }
+  // }, [choiceOne, choiceTwo])
   
   console.log(cards)
 
